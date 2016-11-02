@@ -2,7 +2,7 @@
 
 while true
 do
-    read -p "Choose an option " prompt
+    read -p "Choose an option (1 - 3) " prompt
     
     if [ $prompt == "stop" ]
     then
