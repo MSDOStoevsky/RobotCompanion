@@ -2,7 +2,7 @@
 
 while true
 do
-    read -p "Do you wish to install this program?" prompt
+    read -p "Choose an option " prompt
     
     if [ $prompt == "stop" ]
     then
