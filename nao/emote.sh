@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SUCCESS=("Nice Job!" "That was good!" "Good!")
+SUCCESS=("Nice Job!" "That was good!" "Good job!")
 FAILURE=("Oops! Maybe next time!" "Nice try" "Not quite" "well... ok")
 SUGGESTIONS=("")
 
@@ -32,6 +32,6 @@ do
     then
         say "Maybe the third piece will work"
     else
-        echo "Input must be 1 - 3"
+        echo "Input must be 1 - 3, Y, or N"
     fi
 done

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SUCCESS=("Success" "Ok" "Acceptable")
-FAILURE=("Unsuccessful" "No")
+FAILURE=("Unsuccessful" "No" "Fail")
 SUGGESTIONS=("")
 
 function dialogue_option(){
@@ -24,14 +24,14 @@ do
         dialogue_option "FAILURE[@]"
     elif [ $prompt == "1" ]
     then
-        say "One"
+        say "Number one"
     elif [ $prompt == "2" ]
     then
         say "Two"
     elif [ $prompt == "3" ]
     then
-        say "Three"
+        say "Select piece three"
     else
-        echo "Input must be 1 - 3"
+        echo "Input must be 1 - 3, Y, or N"
     fi
 done
