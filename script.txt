@@ -1,0 +1,76 @@
+Humanoid Suggestions
+
+"Try the first piece",
+"How about the first one",
+"I think the first will work",
+"The first piece is good",
+"Consider the first piece",
+"What about the first one",
+"Let's play the first one",
+"Maybe the first piece will work",
+"The first is good to use",
+
+"Try the second piece",
+"How about the second one",
+"I think the second will work",
+"The second piece is good",
+"Consider the second piece",
+"What about the second one",
+"Let's play the second one",
+"Maybe the second piece will work",
+"The second is good to use",
+
+"Try the third piece",
+"How about the third one",
+"I think the third will work",
+"The third piece is good",
+"Consider the third piece",
+"What about the third one",
+"Let's play the third one",
+"Maybe the third piece will work",
+"The third is good to use",
+
+NonHumanoid Suggestions
+
+"first piece",
+"first",
+"Choose the first",
+"Select the first",
+"Place the first piece",
+
+"second piece",
+"second",
+"Choose the second",
+"Select the second",
+"Place the second piece",
+
+"third piece",
+"third",
+"Choose the third",
+"Select the third",
+"Place the third piece",
+
+Humanoid Feedback
+
+"Nice Job!",
+"I think you do better",
+"Nice Try",
+"Oops! Maybe next time!",
+"Good effort",
+"Not quite",
+"That was good!",
+"Almost!",
+"Good Job!",
+"There was probably a better place you could've put that",
+
+Nonhumanoid Feedback
+
+"Success",
+"Complete",
+"Fine",
+"Ok",
+"Fail",
+"Unsuccessful",
+"Good",
+"Goal acheived",
+"No",

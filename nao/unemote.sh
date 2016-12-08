@@ -1,37 +1,62 @@
 #!/bin/bash
+let FEEDBACK_COUNTER=0
+FEEDBACK=(
+    "Success"
+    "Complete"
+    "Fine"
+    "Ok"
+    "Fail"
+    "No"
+    "Unsuccessful"
+    "Good"
+    "Goal acheived"
+)
+SUGGESTIONS=(
+    "first piece"
+    "first"
+    "Choose the first"
+    "Select the first"
+    "Place the first piece"
 
-SUCCESS=("Success" "Ok" "Acceptable")
-FAILURE=("Unsuccessful" "No" "Fail")
-SUGGESTIONS=("")
+    "second piece"
+    "second"
+    "Choose the second"
+    "Select the second"
+    "Place the second piece"
+
+    "third piece"
+    "third"
+    "Choose the third"
+    "Select the third"
+    "Place the third piece"
+)
 
 function dialogue_option(){
     arr=("${!1}")
-    say ${arr["$[RANDOM % ${#arr[@]}]"]} 
+    choice=${arr["$[RANDOM % ${#arr[@]}]"]}
+    echo $choice
+    say $choice
 }
 
 while true
 do
-    read -p "Choose an option (1 - 3) " prompt
+    read -p "S or F" prompt
     
     if [ $prompt == "stop" ]
     then
         break
-    elif [ $prompt == "Y" ]
+    elif [ $prompt == "S" ]
     then
-        dialogue_option "SUCCESS[@]"
-    elif [ $prompt == "N" ]
+        dialogue_option "SUGGESTIONS[@]"
+    elif [ $prompt == "F" ]
     then
-        dialogue_option "FAILURE[@]"
-    elif [ $prompt == "1" ]
-    then
-        say "Number one"
-    elif [ $prompt == "2" ]
-    then
-        say "Two"
-    elif [ $prompt == "3" ]
-    then
-        say "Select piece three"
+        if [ $FEEDBACK_COUNTER -eq 9 ]
+        then
+            let "FEEDBACK_COUNTER = 0"
+        fi
+        say ${FEEDBACK["$FEEDBACK_COUNTER"]}
+        let "FEEDBACK_COUNTER = FEEDBACK_COUNTER + 1"
     else
-        echo "Input must be 1 - 3, Y, or N"
+        echo "ENTER EITHER S OR F \n"
     fi
 done
